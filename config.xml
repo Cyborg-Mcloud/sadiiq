@@ -8,7 +8,7 @@
 		package="com.designge.flickgame"
 		>
     <name>Flick Game</name>
-	<icon src="icon.jpg" />
+	<icon src="icon.png" />
 
 	<preference name="phonegap-version" value="3.7.0" /> 
 	<preference name="orientation" value="portrait" />
