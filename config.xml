@@ -41,7 +41,7 @@
 	</feature>
 	<feature name="InAppBrowser">
 		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+		
 
 	</feature>
   <feature name="File">
