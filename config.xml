@@ -40,9 +40,7 @@
 	<feature name="App">
 	  <param name="android-package" value="com.designge.flickgame"/>
 	</feature>
-	<feature name="InAppBrowser">
-		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-	</feature>
+	
   <feature name="File">
         <param name="android-package" value="org.apache.cordova.file.FileUtils" />
     </feature>
