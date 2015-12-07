@@ -62,10 +62,8 @@ document.addEventListener('deviceready', initApp, false);
 function StartWebView()
 {
 ref = window.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=yes');
-}
-
 ref.addEventListener('loadstop', function() {
-alert("showing it");
+	alert("showing it");
 
     if (AdMob)
 		{
@@ -83,7 +81,10 @@ alert("showing it");
 			});
 		}
     //Page loaded! some code here..
-});
+	});	
+
+}
+
 
 
 
