@@ -37,10 +37,11 @@ function initApp() {
     if (AdMob) {
         AdMob.createBanner({
             adId : admobid.banner,
+			adSize: AdMob.SMART_BANNER;
             position : AdMob.AD_POSITION.POS_XY,
 			overlap: true,
 			x: 0,       
-			y: 0,      
+			y: 500,      
             autoShow : true
         });
     }
