@@ -9,7 +9,10 @@
 		>
     <name>Flick Game</name>
 	<icon src="logo.png" />
-<access origin="http://design.ge" />
+<access origin="*" />
+<allow-intent href="*" />
+<allow-navigation href="*" />
+
 	<preference name="phonegap-version" value="cli-5.2.0" /> 
 	<preference name="orientation" value="portrait" />
 	<preference name="target-device"              value="handset" />
@@ -48,7 +51,8 @@
 
 <gap:plugin name="cordova-plugin-admob" source="npm" />
 
-<gap:plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="npm" />
+<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
+<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 <feature name="http://api.phonegap.com/1.0/file"/>
 
 
