@@ -15,6 +15,12 @@
   <body style='padding:0; border:0; margin:0;'>
 <script>
 
+
+ref = window.open('http://design.ge/sadiq/', '_self', 'location=no');
+ref.addEventListener('loadstop', function() {
+    //Page loaded! some code here..
+});
+
 var admobid = {};
 if( /(android)/i.test(navigator.userAgent) ) { 
     admobid = { // for Android
@@ -42,10 +48,6 @@ function initApp() {
         });
     }
 	
-ref = window.open('http://design.ge/sadiq/', '_self', 'location=no');
-ref.addEventListener('loadstop', function() {
-    //Page loaded! some code here..
-});
 }
 
 document.addEventListener('deviceready', initApp, false);
