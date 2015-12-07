@@ -58,12 +58,27 @@ document.addEventListener('deviceready', initApp, false);
 
 function StartWebView()
 {
-ref = window.open('http://design.ge/sadiq/', '_blank', 'location=no,clearcache=yes');
+ref = window.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=yes');
 }
 
-//ref.addEventListener('loadstop', function() {
+ref.addEventListener('loadstop', function() {
+	
+    if (AdMob)
+		{
+        AdMob.createBanner({
+            adId : admobid.banner,
+
+            position : AdMob.AD_POSITION.POS_XY,
+			bannerAtTop: true,
+			overlap: true,
+			x: 0,       
+			y: 500,      
+            autoShow : true
+           
+			});
+		}
     //Page loaded! some code here..
-//});
+});
 
 
 
