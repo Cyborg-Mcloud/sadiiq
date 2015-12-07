@@ -12,9 +12,11 @@
 
 	<preference name="phonegap-version" value="3.7.0" /> 
 	<preference name="orientation" value="portrait" />
+	<preference name="target-device"              value="handset" />
 	<preference name="fullscreen" value="true" />
 	<preference name="webviewbounce" value="false" />  
 	<preference name="DisallowOverscroll" value="true" />
+	<preference name="stay-in-webview"            value="false" /> 
     <description>
     Flick Game
     </description>
@@ -43,6 +45,10 @@
   <feature name="File">
         <param name="android-package" value="org.apache.cordova.file.FileUtils" />
     </feature>
+
+
+<gap:plugin name="cordova-plugin-admob" source="npm" />
+
 <feature name="http://api.phonegap.com/1.0/file"/>
 
 
