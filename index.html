@@ -49,12 +49,16 @@ function initApp()
 			});
 		}
 	
-
-	ref = window.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=yes');
+setTimeout("StartWebView();",2000); 
+	
 	}	
 
 document.addEventListener('deviceready', initApp, false);
 
+function StartWebView()
+{
+ref = window.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=yes');
+}
 
 //ref.addEventListener('loadstop', function() {
     //Page loaded! some code here..
