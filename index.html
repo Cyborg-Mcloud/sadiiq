@@ -46,8 +46,7 @@ function initApp()
 
 			bannerAtTop: true,
 			overlap: true,
-			x: 0,       
-			y: 500,      
+			
             autoShow : true
            
 			});
@@ -61,21 +60,20 @@ document.addEventListener('deviceready', initApp, false);
 
 function StartWebView()
 {
-ref = cordova.InAppBrowser.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=yes,hidden=yes');
+ref = cordova.InAppBrowser.open('http://design.ge/sadiq/', '_blank', 'hidden=yes');
 ref.addEventListener('loadstart', function() {
-	alert("showing it");
+	  AdMob = window.AdMob;
 
     if (AdMob)
 		{
         AdMob.createBanner({
-            adId : admobid.banner,
+             adId : admobid.banner,
 			adSize:AdMob.SMART_BANNER,
             position:AdMob.AD_POSITION.BOTTOM_CENTER,
 
 			bannerAtTop: true,
 			overlap: true,
-			x: 0,       
-			y: 500,      
+			
             autoShow : true
            
 			});
