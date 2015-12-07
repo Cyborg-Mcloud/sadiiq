@@ -53,7 +53,7 @@
 
 <gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-<feature name="http://api.phonegap.com/1.0/file"/>
+<feature name="http://api.phonegap.com/1.0/file" />
 
 
 </widget>
