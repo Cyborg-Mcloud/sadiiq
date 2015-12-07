@@ -9,7 +9,7 @@
 		>
     <name>Flick Game</name>
 	<icon src="logo.png" />
-
+<access origin="http://design.ge" />
 	<preference name="phonegap-version" value="cli-5.2.0" /> 
 	<preference name="orientation" value="portrait" />
 	<preference name="target-device"              value="handset" />
@@ -41,6 +41,8 @@
 	</feature>
 	<feature name="InAppBrowser">
 		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+
 	</feature>
   <feature name="File">
         <param name="android-package" value="org.apache.cordova.file.FileUtils" />
