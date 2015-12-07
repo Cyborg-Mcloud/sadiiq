@@ -57,32 +57,17 @@ function initApp()
 	}	
 
 document.addEventListener('deviceready', initApp, false);
-
+var ref="";
 function StartWebView()
 {
 ref = cordova.InAppBrowser.open('http://design.ge/sadiq/', '_blank', 'hidden=yes');
-ref.addEventListener('loadstart', function() {
-	  AdMob = window.AdMob;
-
-    if (AdMob)
-		{
-        AdMob.createBanner({
-             adId : admobid.banner,
-			adSize:AdMob.SMART_BANNER,
-            position:AdMob.AD_POSITION.BOTTOM_CENTER,
-
-			bannerAtTop: true,
-			overlap: true,
-			
-            autoShow : true
-           
-			});
-		}
-    //Page loaded! some code here..
-	});	
-
+setTimeout("showwebview();",5000); 
 }
 
+function showwebview()
+{
+ref.show();
+}
 
 
 
