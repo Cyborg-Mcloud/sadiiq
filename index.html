@@ -15,17 +15,11 @@
   <body style='padding:0; border:0; margin:0;'>
 <script>
 
-
-ref = window.open('http://design.ge/sadiq/', '_self', 'location=no');
-ref.addEventListener('loadstop', function() {
-    //Page loaded! some code here..
-});
-
 var admobid = {};
 if( /(android)/i.test(navigator.userAgent) ) { 
     admobid = { // for Android
-        banner: 'ca-app-pub-7891529820439500/1345179070',
-        interstitial: 'ca-app-pub-7891529820439500/4298645479'
+        banner: 'ca-app-pub-6869992474017983/9375997553',
+        interstitial: 'ca-app-pub-6869992474017983/1657046752'
     };
 } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
     admobid = { // for iOS
@@ -47,11 +41,14 @@ function initApp() {
             autoShow : true
         });
     }
-	
 }
 
 document.addEventListener('deviceready', initApp, false);
 
+ref = window.open('http://design.ge/sadiq/', '_self', 'location=no');
+ref.addEventListener('loadstop', function() {
+    //Page loaded! some code here..
+});
 </script>
 
 </body>
