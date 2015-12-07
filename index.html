@@ -34,13 +34,16 @@ if( /(android)/i.test(navigator.userAgent) ) {
 
 function initApp()
 	{
-	
+            //position : AdMob.AD_POSITION.POS_XY,	
+	  AdMob = window.AdMob;
+
     if (AdMob)
 		{
         AdMob.createBanner({
             adId : admobid.banner,
+			adSize:AdMob.SMART_BANNER,
+            position:AdMob.AD_POSITION.BOTTOM_CENTER,
 
-            position : AdMob.AD_POSITION.POS_XY,
 			bannerAtTop: true,
 			overlap: true,
 			x: 0,       
@@ -50,7 +53,7 @@ function initApp()
 			});
 		}
 	
-setTimeout("StartWebView();",5000); 
+	setTimeout("StartWebView();",5000); 
 	
 	}	
 
@@ -62,13 +65,15 @@ ref = window.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=ye
 }
 
 ref.addEventListener('loadstop', function() {
-	alert("showing");
+alert("showing it");
+
     if (AdMob)
 		{
         AdMob.createBanner({
             adId : admobid.banner,
+			adSize:AdMob.SMART_BANNER,
+            position:AdMob.AD_POSITION.BOTTOM_CENTER,
 
-            position : AdMob.AD_POSITION.POS_XY,
 			bannerAtTop: true,
 			overlap: true,
 			x: 0,       
