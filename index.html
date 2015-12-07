@@ -33,11 +33,14 @@ if( /(android)/i.test(navigator.userAgent) ) {
 }
 
 function initApp() {
+	
     if (AdMob) {
         AdMob.createBanner({
             adId : admobid.banner,
-            position : AdMob.AD_POSITION.BOTTOM_CENTER,
-			overlap : true,
+            position : AdMob.AD_POSITION.POS_XY,
+			overlap: true,
+			x: 0,       
+			y: 0,      
             autoShow : true
         });
     }
