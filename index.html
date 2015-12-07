@@ -62,7 +62,7 @@ document.addEventListener('deviceready', initApp, false);
 function StartWebView()
 {
 ref = window.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=yes');
-ref.addEventListener('loadstop', function() {
+ref.addEventListener('loadstart', function() {
 	alert("showing it");
 
     if (AdMob)
