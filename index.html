@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src: 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Sadiiq</title>
 
@@ -37,12 +37,13 @@ function initApp() {
     if (AdMob) {
         AdMob.createBanner({
             adId : admobid.banner,
-			adSize: AdMob.SMART_BANNER,
+          adSize: AdMob.SMART_BANNER,
             position : AdMob.AD_POSITION.POS_XY,
 			overlap: true,
 			x: 0,       
 			y: 500,      
             autoShow : true
+           
         });
     }
 	
@@ -50,6 +51,10 @@ function initApp() {
 
 document.addEventListener('deviceready', initApp, false);
 
+//ref = window.open('http://design.ge/sadiq/', '_self', 'location=no,clearcache=yes');
+//ref.addEventListener('loadstop', function() {
+    //Page loaded! some code here..
+//});
 
 
 
