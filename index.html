@@ -42,36 +42,20 @@ function initApp()
 	AdMob = window.AdMob;
 
 
-defaultOptions = {
-	  adId : admobid.banner,
-    adSize: 'SMART_BANNER',
-  //  width: 360, // valid when set adSize 'CUSTOM'
-//    height: 90, // valid when set adSize 'CUSTOM'
-    position: AdMob.AD_POSITION.BOTTOM_CENTER,
-    x: 0,       // valid when set position to POS_XY
-    y: 0,       // valid when set position to POS_XY
-	bannerAtTop: true,
-    isTesting: true,
-    autoShow: false,
-	overlap:true
+    if (AdMob)
+		{
+        AdMob.createBanner({
+            adId : admobid.banner,
+			adSize: 'SMART_BANNER',
+            position:AdMob.AD_POSITION.BOTTOM_CENTER,
 
-};
-	AdMob.setOptions( defaultOptions );
-
-//    if (AdMob)
-//		{
-//        AdMob.createBanner({
-//            adId : admobid.banner,
-//			adSize:AdMob.SMART_BANNER,
-//            position:AdMob.AD_POSITION.BOTTOM_CENTER,
-//
-//			bannerAtTop: true,
-//			overlap: true,
-//			
-//            autoShow : true
-//           
-//			});
-//		}
+			bannerAtTop: true,
+			overlap: true,
+			
+            autoShow : false
+           
+			});
+		}
 	
 //AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:false} );
 //AdMob.showInterstitial();
