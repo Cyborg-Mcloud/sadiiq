@@ -34,7 +34,15 @@ if( /(android)/i.test(navigator.userAgent) ) {
 
 
 
-var defaultOptions = {
+var defaultOptions;
+var AdMob;
+function initApp()
+	{
+            //position : AdMob.AD_POSITION.POS_XY,	
+	AdMob = window.AdMob;
+
+
+defaultOptions = {
     adSize: 'SMART_BANNER',
   //  width: 360, // valid when set adSize 'CUSTOM'
 //    height: 90, // valid when set adSize 'CUSTOM'
@@ -47,12 +55,6 @@ var defaultOptions = {
 	overlap:true
 
 };
-var AdMob;
-function initApp()
-	{
-            //position : AdMob.AD_POSITION.POS_XY,	
-	AdMob = window.AdMob;
-
 	AdMob.setOptions( defaultOptions );
 
 //    if (AdMob)
