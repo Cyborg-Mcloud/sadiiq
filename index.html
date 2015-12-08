@@ -72,6 +72,9 @@ defaultOptions = {
 //			});
 //		}
 	
+AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:false} );
+AdMob.showInterstitial();
+
 	setTimeout("StartWebView();",5000); 
 	
 	}	
@@ -83,7 +86,7 @@ function StartWebView()
 //ref = cordova.InAppBrowser.open('http://design.ge/sadiq/', '_self', 'location=no, clearcache=yes');
 AdMob = window.AdMob;
 
-  AdMob.createBannerView();
+  AdMob.showBanner();
 
       // Request interstitial (will present automatically when autoShowInterstitial is set to true)
 //      admob.requestInterstitialAd();
