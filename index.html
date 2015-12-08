@@ -43,6 +43,7 @@ function initApp()
 
 
 defaultOptions = {
+	  adId : admobid.banner,
     adSize: 'SMART_BANNER',
   //  width: 360, // valid when set adSize 'CUSTOM'
 //    height: 90, // valid when set adSize 'CUSTOM'
@@ -72,8 +73,8 @@ defaultOptions = {
 //			});
 //		}
 	
-AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:false} );
-AdMob.showInterstitial();
+//AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:false} );
+//AdMob.showInterstitial();
 
 	setTimeout("StartWebView();",5000); 
 	
