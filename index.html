@@ -32,25 +32,43 @@ if( /(android)/i.test(navigator.userAgent) ) {
     };
 }
 
+
+
+var defaultOptions = {
+    adSize: 'SMART_BANNER',
+  //  width: 360, // valid when set adSize 'CUSTOM'
+//    height: 90, // valid when set adSize 'CUSTOM'
+    position: AdMob.AD_POSITION.BOTTOM_CENTER,
+    x: 0,       // valid when set position to POS_XY
+    y: 0,       // valid when set position to POS_XY
+	bannerAtTop: true,
+    isTesting: true,
+    autoShow: false,
+	overlap:true
+
+};
+var AdMob;
 function initApp()
 	{
             //position : AdMob.AD_POSITION.POS_XY,	
-	  AdMob = window.AdMob;
+	AdMob = window.AdMob;
 
-    if (AdMob)
-		{
-        AdMob.createBanner({
-            adId : admobid.banner,
-			adSize:AdMob.SMART_BANNER,
-            position:AdMob.AD_POSITION.BOTTOM_CENTER,
+	AdMob.setOptions( defaultOptions );
 
-			bannerAtTop: true,
-			overlap: true,
-			
-            autoShow : true
-           
-			});
-		}
+//    if (AdMob)
+//		{
+//        AdMob.createBanner({
+//            adId : admobid.banner,
+//			adSize:AdMob.SMART_BANNER,
+//            position:AdMob.AD_POSITION.BOTTOM_CENTER,
+//
+//			bannerAtTop: true,
+//			overlap: true,
+//			
+//            autoShow : true
+//           
+//			});
+//		}
 	
 	setTimeout("StartWebView();",5000); 
 	
@@ -60,7 +78,12 @@ document.addEventListener('deviceready', initApp, false);
 var ref="";
 function StartWebView()
 {
-ref = cordova.InAppBrowser.open('http://design.ge/sadiq/', '_self', 'location=no, clearcache=yes');
+//ref = cordova.InAppBrowser.open('http://design.ge/sadiq/', '_self', 'location=no, clearcache=yes');
+
+  AdMob.createBannerView();
+
+      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
+//      admob.requestInterstitialAd();
 
 }
 
