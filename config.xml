@@ -5,8 +5,7 @@
         id        = "com.designge.flickgame"
 	    versionCode="19" 
         version   = "1.0.3"
-		package="com.designge.flickgame"
-		>
+		package="com.designge.flickgame">
     <name>Flick Game</name>
 	<icon src="logo.png" />
 
@@ -39,6 +38,7 @@
 <preference name="android-minSdkVersion"      value="11" />         
 <preference name="android-installLocation"    value="auto" />
 <preference name="EnableViewportScale"    value="true" />
+
 	<description>
     Flick Game
     </description>
@@ -83,6 +83,7 @@
     </feature>
 
 	<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
+
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
 <gap:splash src="splash.png" />
 <gap:splash src="splash.png"  width="640" height="960" />
