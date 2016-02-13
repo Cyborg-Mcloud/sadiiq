@@ -7,6 +7,8 @@
         version   = "1.0.3"
 		package="com.designge.flickgame">
     <name>Flick Game</name>
+
+
 	<icon src="logo.png" />
 
 	<icon src="logo-72.png" gap:platform="ios" width="72" height="72" />
@@ -67,11 +69,11 @@
     </feature>
 
 
-<gap:plugin name="cordova-plugin-admob" source="npm" />
+	<gap:plugin name="cordova-plugin-admob" source="npm" />
 
-<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
-<gap:plugin name="cordova-plugin-whitelist" source="npm" />
-<feature name="http://api.phonegap.com/1.0/file" />
+	<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+	<feature name="http://api.phonegap.com/1.0/file" />
 
 
    <feature name="SplashScreen">
@@ -84,12 +86,7 @@
 
 	<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
 
-<gap:plugin name="cordova-plugin-whitelist" source="npm" />
-<gap:splash src="splash.png" />
-<gap:splash src="splash.png"  width="640" height="960" />
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 
-<gap:splash src="Default.png" gap:platform="ios" width="640" height="1136" />
-<gap:splash src="Default@2x.png" gap:platform="ios" width="640" height="1136" />
-<gap:splash src="Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
 
 </widget>
