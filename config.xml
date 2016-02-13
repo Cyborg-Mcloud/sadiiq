@@ -69,20 +69,12 @@
     </feature>
 
 
-	<gap:plugin name="cordova-plugin-admob" source="npm" />
+
 
 	<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<feature name="http://api.phonegap.com/1.0/file" />
 
-
-   <feature name="SplashScreen">
-
-		<param name="android-package" value="org.apache.cordova.SplashScreen"/>
-
-		<param name="ios-package" value="CDVSplashScreen"/>
-        <param name="onload" value="true"/>
-    </feature>
 
 	<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
 
